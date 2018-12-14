@@ -1,0 +1,50 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.12.1/libexec/bin/yarn.js add axios
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Users/Akmal/Android-SDK/platform-tools:/usr/local/mongodb/bin:/Users/Akmal/Library/Android/sdk/emulator:/Users/Akmal/Library/Android/sdk/tools:/Users/Akmal/Library/Android/sdk/platform-tools:/Users/Akmal/Library/Android/sdk/tools/bin
+
+Yarn version: 
+  1.12.1
+
+Node version: 
+  10.13.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/Users/Akmal/Desktop/Dev/Lab/webdev/devflow/node_modules/axios'
+
+npm manifest: 
+  {
+    "name": "devflow",
+    "version": "1.0.0",
+    "description": "DevFlow - Web Development & Optimization Services",
+    "main": "server.js",
+    "dependencies": {
+      "body-parser": "^1.18.3",
+      "concurrently": "^4.1.0",
+      "express": "^4.16.4",
+      "mongoose": "^5.3.14",
+      "ms": "^2.1.1",
+      "react-router-dom": "^4.3.1",
+      "validator": "^10.9.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "client-install": "npm install --prefix client",
+      "start": "node server.js",
+      "server": "nodemon server.js",
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "client": "npm start --prefix client"
+    },
+    "author": "Shanusha",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

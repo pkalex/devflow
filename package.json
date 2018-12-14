@@ -1,0 +1,28 @@
+{
+  "name": "devflow",
+  "version": "1.0.0",
+  "description": "DevFlow - Web Development & Optimization Services",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "google-maps-react": "^2.0.2",
+    "mongoose": "^5.3.14",
+    "ms": "^2.1.1",
+    "react-router-dom": "^4.3.1",
+    "validator": "^10.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "client": "npm start --prefix client"
+  },
+  "author": "Shanusha",
+  "license": "MIT"
+}
